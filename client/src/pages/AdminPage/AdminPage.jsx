@@ -7,9 +7,9 @@ const AdminPage = () => {
             <Header />
 
             <div className={style.wrapper}>
-                
+
                 <div className={style.topWr}>
-                    <p>Создание</p>
+                    <p className={style.blue}>Создание</p>
                     <p>Обновление</p>
                     <p>Удаление</p>
                 </div>
@@ -19,13 +19,11 @@ const AdminPage = () => {
                     <input type="text" placeholder='Введите название курса' />
                 </div>
 
-                <div className={style.maimWr}>
+                <div className={style.two}>
                     <p>Описание</p>
                     <input type="text" placeholder='Введите описание курса' />
 
-                    <div className={style.btn}>
-                        <p>Применить</p>
-                    </div>
+                    <div className={style.btn}>Применить</div>
                 </div>
             </div >
         </div>
