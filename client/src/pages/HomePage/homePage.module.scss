@@ -1,0 +1,49 @@
+.search {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 981px;
+    gap: 40px;
+
+
+    .inputWr {
+        display: flex;
+        justify-content: center;
+        margin-top: 33px;
+
+        input {
+            width: 957px;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid var(--Grey-200, #EAEBED);
+            background: var(--grey-scale-white, #FFF);
+
+            &::placeholder {
+                padding-left: 12px;
+                color: #EAEBED;
+            }
+        }
+
+        .btn {
+            padding: 12px;
+            width: 83px;
+            border-radius: 8px;
+            background: var(--Blue-Main-500, #5E96FC);
+            text-align: center;
+            color: #FFF;
+        }
+    }
+
+    .courseWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 100px;
+
+        h3 {
+           color: #5E96FC;
+        }
+
+    }
+
+}

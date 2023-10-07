@@ -1,0 +1,31 @@
+.wrapper {
+    width: 957px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+
+    .topWr {
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        margin-top: 33px;
+
+        p {#5E96FC;}
+    }
+
+}
+
+
+
+// .oneWr,
+// .twoWr {
+//     border-radius: 8px;
+//     border: 1px solid var(--Grey-300, #D5D6DC);
+//     background: #FFF;
+// }
+
+// .btn {
+//     border-radius: 8px;
+//     background: var(--Blue-Main-500, #5E96FC);
+// }

@@ -1,0 +1,22 @@
+.conteiner {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+    margin-left: 162px;
+
+    h1 {
+        color: #232134;
+    }
+
+    .ref {
+        display: flex;
+        gap: 30px;
+
+        p {
+            color: #232134;
+            font: 500 16px Inter;
+            text-decoration: none;
+        }
+    }
+}
