@@ -1,16 +1,11 @@
 import Header from '../../components/Header/Header';
 import style from './homePage.module.scss';
+import { useGetAllCourseQuery } from '../../service/serviceCourse';
 
 const HomePage = () => {
 
-    const array = [
-        { id: 1, header: "C#Couse", description: "В течение курса студенты ознакомятся с ...", location: "Минск" },
-        { id: 2, header: "JavaScript Course", description: "В течение курса студенты ознакомятся с ...", location: "Минск" },
-        { id: 3, header: "C#Couse", description: "В течение курса студенты ознакомятся с ...", location: "Минск" },
-        { id: 4, header: "JavaScript Course", description: "В течение курса студенты ознакомятся с ...", location: "Минск" },
-        { id: 5, header: "C#Couse", description: "В течение курса студенты ознакомятся с ...", location: "Минск" },
-        { id: 6, header: "JavaScript Course", description: "В течение курса студенты ознакомятся с ...", location: "Минск" },
-    ]
+    const { data } = useGetAllCourseQuery();
+    console.log(data);
 
     return (
         <div>
@@ -23,7 +18,7 @@ const HomePage = () => {
                 </div>
 
                 <div className={style.courseWrapper}>
-                    {array.map((el, index) => (
+                    {data?.map((el, index) => (
                         <div className={style.course} key={index}>
                             <h3>{el.header}</h3>
                             <p>{el.description}</p>
